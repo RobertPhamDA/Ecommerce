@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { AuthProvider } from "@/lib/auth-context";
+import { Navigation } from "@/components/Navigation";
 
 export const metadata: Metadata = {
   title: "Ecommerce",
@@ -19,13 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/" className="text-lg font-semibold">
                 Ecommerce
               </Link>
-              <nav className="flex gap-4 text-sm">
-                <Link href="/products">Products</Link>
-                <Link href="/blog">Blog</Link>
-                <Link href="/bookings">Bookings</Link>
-                <Link href="/admin">Admin</Link>
-                <Link href="/auth/login">Login</Link>
-              </nav>
+              <Navigation />
             </div>
           </header>
           <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
