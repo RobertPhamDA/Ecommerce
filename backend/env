@@ -1,0 +1,17 @@
+APP_ENV=dev
+APP_NAME=Ecommerce API
+APP_ORIGINS=http://localhost:3000
+
+# Supabase Postgres connection string (Transaction Pooler is OK; use direct connection for Alembic if needed)
+DATABASE_URL=postgresql://postgres.srindmubvpjebdxlkwaw:Thanhthanh2503!@aws-1-ap-south-1.pooler.supabase.com:6543/postgres
+
+# JWT
+JWT_SECRET=6cd014d97a5632376f8283db0db4c7312aef41fa9d8490d5e07fd4f4b6b47f08
+JWT_ALG=HS256
+JWT_ACCESS_TOKEN_EXPIRES_MINUTES=60
+
+# Supabase Storage (images)
+SUPABASE_URL=https://srindmubvpjebdxlkwaw.supabase.co
+SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNyaW5kbXVidnBqZWJkeGxrd2F3Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzkzNDA4OSwiZXhwIjoyMDg5NTEwMDg5fQ.KVJt4k7mNMhawEuScPpFAiLgD1TN04lRlaERof0BqnQ
+SUPABASE_STORAGE_BUCKET_IMAGES=images
+

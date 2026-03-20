@@ -1,0 +1,16 @@
+[project]
+name = "ecommerce-backend"
+version = "0.1.0"
+description = "FastAPI backend for ecommerce website (products, categories, posts, comments, bookings) with JWT RBAC and Cloudflare R2 uploads."
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["app"]
+
